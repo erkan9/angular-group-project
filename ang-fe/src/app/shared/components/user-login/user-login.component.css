@@ -1,0 +1,40 @@
+.login-form {
+    max-width: 500px;
+    max-height: 400px;
+    background-color: #242424;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  .switchForm{
+    margin-bottom: 10px;
+    min-width: 150px;
+    max-width: 600px;
+    width: 100%;
+    
+    justify-content: center;
+  }
+
+  .container{
+    max-width: 600px;
+    max-height: 600px;
+  }
+  
+  .loginPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  mat-slide-toggle.mat-slide-toggle-bar {
+    background-color: red; /* set your color here */
+  }
+
+  mat-slide-toggle:not(.mat-checked):not(.mat-disabled) .mat-slide-toggle-thumb {
+    background-color: blue;
+  }

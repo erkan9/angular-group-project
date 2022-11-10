@@ -1,0 +1,21 @@
+<mat-drawer-container class="sidenav-contianer">
+    <mat-drawer mode="side" #drawer mode="side" [opened]="isOpenned" class="sidenav-drawer">
+        <mat-list>
+            <a routerLink="profile" *ngIf="appService.isUserLoggedIn()"><mat-list-item class="sidenav-list-item"> Profile </mat-list-item></a>
+            <a routerLink="org-profile" *ngIf="appService.isOrganisationLoggedIn()"><mat-list-item class="sidenav-list-item">Org Profile </mat-list-item></a>
+
+            <a routerLink="job-list" *ngIf="appService.isAnyoneLoggedIn()"><mat-list-item class="sidenav-list-item">Jobs </mat-list-item></a>
+
+            <a color="warn" routerLink="user-signin" *ngIf="appService.noneLoggedIn()"><mat-list-item class="sidenav-list-item" >Log In </mat-list-item></a>
+            <a color="warn" routerLink="user-signup" *ngIf="appService.noneLoggedIn()"><mat-list-item class="sidenav-list-item" >Register </mat-list-item></a>
+
+            <mat-divider *ngIf="appService.noneLoggedIn()"></mat-divider>
+
+            <a color="warn" (click)="handleLogout()" *ngIf="appService.isAnyoneLoggedIn()"><mat-list-item class="sidenav-list-item" >Log Out </mat-list-item></a>
+        </mat-list>
+    </mat-drawer>
+    <mat-drawer-content>
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>
+  <!-- method that takes array with types of users allowed to interact with an option -->

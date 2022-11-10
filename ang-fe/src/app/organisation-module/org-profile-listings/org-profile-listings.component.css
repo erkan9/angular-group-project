@@ -1,0 +1,14 @@
+.jobLink:hover{
+    color: #ce9ee2d2;
+}
+.jobLink{
+    color: #fff;
+}
+
+.table{
+    width: 100%;
+}
+
+.new-tab-ico{
+    transform: scale(0.5);
+}

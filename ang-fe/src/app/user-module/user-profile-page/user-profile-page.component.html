@@ -1,0 +1,72 @@
+<div class="page" mat-grid-list>
+
+  <mat-card class="profile-card">
+    <mat-card-title>
+      <button mat-icon-button [matMenuTriggerFor]="menu" class="settings-button" style="float: right;">
+        <mat-icon>settings</mat-icon>
+      </button>
+      <p>{{[(profileData?.userFirstName)]}}, {{[(profileData?.username)]}}</p>
+    </mat-card-title>
+    <mat-card-subtitle>
+      <p [textContent]="[(profileData?.userEmail)]"></p>
+    </mat-card-subtitle>
+    <mat-card-content>
+
+      <div class="profile-edit" *ngIf="isEditing">
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput [(ngModel)]="editedEmail">
+        </mat-form-field>
+        <span>&#160;</span>
+        
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Username</mat-label>
+          <input matInput [(ngModel)]="editedUsername">
+        </mat-form-field>
+        <span>&#160;</span>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>First Name</mat-label>
+          <input matInput [(ngModel)]="editedFirstName">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>New Password</mat-label>
+          <input matInput [(ngModel)]="newPassword">
+        </mat-form-field>
+
+        <br>
+
+        <button mat-button color="accent" (click)="modifyAccount()">
+          <mat-icon>check</mat-icon>
+          <span>Save Changes</span>
+        </button>
+        <button mat-button color="warn" (click)="isEditing=false">
+          <mat-icon>close icon</mat-icon>
+          <span>Cancel</span>
+        </button>
+
+      </div>
+
+    </mat-card-content>
+  </mat-card>
+
+
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="onEdit()">
+      <mat-icon>edit</mat-icon>
+      <span>Modify Account</span>
+    </button>
+    <button mat-menu-item (click)="onDelete()">
+      <mat-icon>delete</mat-icon>
+      <span>Delete Account</span>
+    </button>
+  </mat-menu>
+
+  <mat-card class="profile-card">
+    <mat-card-content>
+      <app-user-profile-applications></app-user-profile-applications>
+    </mat-card-content>
+  </mat-card>
+</div>

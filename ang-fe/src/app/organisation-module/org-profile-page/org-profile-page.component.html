@@ -1,0 +1,70 @@
+<div class="page" mat-grid-list>
+
+  <mat-card class="profile-card">
+    <mat-card-title>
+      <button mat-icon-button [matMenuTriggerFor]="menu" class="settings-button" style="float: right;">
+        <mat-icon>settings</mat-icon>
+      </button>
+      <p>{{[companyName]}}</p>
+    </mat-card-title>
+    <mat-card-subtitle>
+      <p>{{[(email)]}}</p>
+    </mat-card-subtitle>
+    <mat-card-content>
+
+      <div class="profile-edit" *ngIf="isEditing">
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput id="username" name="username" [(ngModel)]="editedEmail">
+        </mat-form-field>
+        <span>&#160;</span>
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Username</mat-label>
+          <input matInput id="username" name="username" [(ngModel)]="editedUsername">
+        </mat-form-field>
+        <span>&#160;</span>
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>New Password</mat-label>
+          <input matInput id="username" name="username" [(ngModel)]="newPassword">
+        </mat-form-field>
+        <br>
+        <button mat-button color="accent" (click)="modifyAccount()">
+          <mat-icon>check</mat-icon>
+          <span>Save Changes</span>
+        </button>
+        <button mat-button color="warn" (click)="isEditing=false">
+          <mat-icon>close icon</mat-icon>
+          <span>Cancel</span>
+        </button>
+
+      </div>
+
+    </mat-card-content>
+  </mat-card>
+
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="onEdit()">
+      <mat-icon>edit</mat-icon>
+      <span>Modify Account</span>
+    </button>
+    <button mat-menu-item (click)="onDelete()">
+      <mat-icon>delete</mat-icon>
+      <span>Delete Account</span>
+    </button>
+  </mat-menu>
+
+  <mat-card class="profile-card">
+    <mat-card-header class="card-header">Organisation Offers</mat-card-header>
+
+    <mat-card-content>
+      <app-org-profile-listings></app-org-profile-listings>
+    </mat-card-content>
+
+    <mat-card-actions>
+      <button mat-raised-button color="accent" style="float: right; margin-right: 10px;"
+        [routerLink]="['/job-new-page']">New</button>
+    </mat-card-actions>
+
+  </mat-card>
+</div>

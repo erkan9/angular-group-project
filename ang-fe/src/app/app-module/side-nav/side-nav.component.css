@@ -1,0 +1,17 @@
+.sidenav-contianer {
+    height:calc(100vh - 64px);
+}
+
+.sidenav-drawer {
+  width: 250px;
+}
+
+.sidenav-list-item {
+  width: 100%;
+}
+
+.sidenav-list-item:hover{
+  transition: 0.2s;
+  background-color: #7b1fa20e;
+  color: #ce9ee2d2;
+}

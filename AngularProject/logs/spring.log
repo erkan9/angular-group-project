@@ -1,0 +1,62 @@
+2022-11-10 21:06:57.986  INFO 9996 --- [main] o.angular.AngularProject.AngularProject  : Starting AngularProject using Java 18 on DESKTOP-QJ5MRT7 with PID 9996 (C:\Users\Erkan\Desktop\New folder (2)\AngularProject\target\classes started by Erkan in C:\Users\Erkan\Desktop\New folder (2)\AngularProject)
+2022-11-10 21:06:57.988  INFO 9996 --- [main] o.angular.AngularProject.AngularProject  : No active profile set, falling back to 1 default profile: "default"
+2022-11-10 21:06:58.422  INFO 9996 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-10 21:06:58.480  INFO 9996 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 5 JPA repository interfaces.
+2022-11-10 21:06:58.869  INFO 9996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8087 (http)
+2022-11-10 21:06:58.875  INFO 9996 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-10 21:06:58.876  INFO 9996 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-11-10 21:06:58.948  INFO 9996 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-10 21:06:58.949  INFO 9996 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 926 ms
+2022-11-10 21:06:59.288  INFO 9996 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-10 21:06:59.415  INFO 9996 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-10 21:07:00.133  INFO 9996 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-10 21:07:00.602  WARN 9996 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-10 21:07:00.690 DEBUG 9996 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-11-10 21:07:00.752 DEBUG 9996 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2022-11-10 21:07:00.767 DEBUG 9996 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-11-10 21:07:00.776 DEBUG 9996 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-11-10 21:07:00.797  WARN 9996 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-11-10 21:07:00.871  INFO 9996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8087 (http) with context path ''
+2022-11-10 21:07:00.878  INFO 9996 --- [main] o.angular.AngularProject.AngularProject  : Started AngularProject in 3.161 seconds (JVM running for 3.614)
+2022-11-10 21:07:44.696  INFO 9996 --- [http-nio-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-10 21:07:44.697  INFO 9996 --- [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-10 21:07:44.697 DEBUG 9996 --- [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-11-10 21:07:44.697 DEBUG 9996 --- [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-11-10 21:07:44.697 DEBUG 9996 --- [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-11-10 21:07:44.697 DEBUG 9996 --- [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7978550b
+2022-11-10 21:07:44.698 DEBUG 9996 --- [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@24731caf
+2022-11-10 21:07:44.698 DEBUG 9996 --- [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-11-10 21:07:44.698  INFO 9996 --- [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-10 21:07:44.705 DEBUG 9996 --- [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/v1/organization/login?organizationEmail=erko@test.com&password=erko", parameters={masked}
+2022-11-10 21:07:44.708 DEBUG 9996 --- [http-nio-8087-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.angular.AngularProject.controllers.OrganizationController#registerUser(String, String)
+2022-11-10 21:07:44.717 DEBUG 9996 --- [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-10 21:07:44.723 DEBUG 9996 --- [http-nio-8087-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/organization/login?organizationEmail=erko@test.com&password=erko", parameters={masked}
+2022-11-10 21:07:44.723 DEBUG 9996 --- [http-nio-8087-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.angular.AngularProject.controllers.OrganizationController#registerUser(String, String)
+2022-11-10 21:07:44.886 DEBUG 9996 --- [http-nio-8087-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-10 21:07:44.888 DEBUG 9996 --- [http-nio-8087-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [OrganizationDto(organizationID=2, organizationName=erko, organizationEmail=erko@test.com, password=e (truncated)...]
+2022-11-10 21:07:44.897 DEBUG 9996 --- [http-nio-8087-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-10 21:07:44.918 DEBUG 9996 --- [http-nio-8087-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/orgJobs?id=2", parameters={masked}
+2022-11-10 21:07:44.918 DEBUG 9996 --- [http-nio-8087-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/organization/getById?orgId=2", parameters={masked}
+2022-11-10 21:07:44.918 DEBUG 9996 --- [http-nio-8087-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.angular.AngularProject.controllers.OrganizationController#getById(int)
+2022-11-10 21:07:44.919 DEBUG 9996 --- [http-nio-8087-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.angular.AngularProject.controllers.JobAddController#getJobsFromOrg(int)
+2022-11-10 21:07:44.935 DEBUG 9996 --- [http-nio-8087-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-10 21:07:44.936 DEBUG 9996 --- [http-nio-8087-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [OrganizationDto(organizationID=2, organizationName=erko, organizationEmail=erko@test.com, password=e (truncated)...]
+2022-11-10 21:07:44.938 DEBUG 9996 --- [http-nio-8087-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-10 21:07:44.946 DEBUG 9996 --- [http-nio-8087-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-10 21:07:44.952 DEBUG 9996 --- [http-nio-8087-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[JobAdDto(jobAdId=2, header=asd, description=asdsad, numberOfLikes=0, jobAdType=Full Time, jobAdCate (truncated)...]
+2022-11-10 21:07:44.958 DEBUG 9996 --- [http-nio-8087-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-10 21:07:52.417 DEBUG 9996 --- [http-nio-8087-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/jobAdds", parameters={}
+2022-11-10 21:07:52.417 DEBUG 9996 --- [http-nio-8087-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.angular.AngularProject.controllers.JobAddController#getAllJobAds()
+2022-11-10 21:07:52.426 DEBUG 9996 --- [http-nio-8087-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-10 21:07:52.429 DEBUG 9996 --- [http-nio-8087-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[JobListingDto(jobAdId=1, header=java dev, description=5k, numberOfLikes=0, jobAdType=Full Time, job (truncated)...]
+2022-11-10 21:07:52.431 DEBUG 9996 --- [http-nio-8087-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-10 21:07:56.049 DEBUG 9996 --- [http-nio-8087-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/orgJobs?id=2", parameters={masked}
+2022-11-10 21:07:56.049 DEBUG 9996 --- [http-nio-8087-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/organization/getById?orgId=2", parameters={masked}
+2022-11-10 21:07:56.050 DEBUG 9996 --- [http-nio-8087-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.angular.AngularProject.controllers.JobAddController#getJobsFromOrg(int)
+2022-11-10 21:07:56.050 DEBUG 9996 --- [http-nio-8087-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.angular.AngularProject.controllers.OrganizationController#getById(int)
+2022-11-10 21:07:56.055 DEBUG 9996 --- [http-nio-8087-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-10 21:07:56.055 DEBUG 9996 --- [http-nio-8087-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [OrganizationDto(organizationID=2, organizationName=erko, organizationEmail=erko@test.com, password=e (truncated)...]
+2022-11-10 21:07:56.056 DEBUG 9996 --- [http-nio-8087-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-10 21:07:56.056 DEBUG 9996 --- [http-nio-8087-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-10 21:07:56.057 DEBUG 9996 --- [http-nio-8087-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[JobAdDto(jobAdId=2, header=asd, description=asdsad, numberOfLikes=0, jobAdType=Full Time, jobAdCate (truncated)...]
+2022-11-10 21:07:56.057 DEBUG 9996 --- [http-nio-8087-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK

@@ -1,0 +1,24 @@
+.profile-card {
+    width: 800px;
+}
+
+.posts {
+    width: 832px;
+
+}
+
+.page {
+    width: 100%;
+    padding-top: 10px;
+    gap: 10px;
+    display: grid;
+    justify-content: space-around;
+}
+
+.card-header {
+    margin-bottom: 10px;
+}
+
+.example-form {
+    width: 100%;
+}

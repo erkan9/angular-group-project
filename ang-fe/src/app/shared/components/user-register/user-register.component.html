@@ -1,0 +1,33 @@
+<div class="registerPage">
+    <div class="container">
+  
+      
+      <form #form="ngForm" class="example-form">
+
+        Register as User <mat-slide-toggle name="isOrg" [(ngModel)]="isOrgRegistering" >Register as Organization</mat-slide-toggle>
+        <mat-form-field class="example-full-width" *ngIf="!isOrgRegistering" appearance="fill">
+          <mat-label>Username</mat-label>
+          <input matInput id="username" name="username" [(ngModel)]="username" autofocus>
+        </mat-form-field>
+  
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Name</mat-label>
+          <input matInput id="name" name="name" [(ngModel)]="name">
+        </mat-form-field>
+  
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput id="userEmail" name="userEmail" [(ngModel)]="email">
+        </mat-form-field>
+  
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Password</mat-label>
+          <input type="password" matInput id="password" name="password" [(ngModel)]="password">
+        </mat-form-field>
+  
+        <button mat-raised-button color="primary" class="example-full-width" type="submit" id="userSubmit" value="Submit"
+          (click)="registerUser()">Register</button>
+      </form>
+    </div>
+  </div>
+  

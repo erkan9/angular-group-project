@@ -1,0 +1,17 @@
+<div class="container">
+    <mat-card >
+        <mat-card-title>{{offer?.header}}</mat-card-title>
+        <mat-card-content>
+            <mat-divider></mat-divider>
+            <p>{{offer?.jobAdType}} {{offer?.jobAdCategory}} Likes {{offer?.numberOfLikes}}</p>
+            <br>
+            <p>{{offer?.description}}</p>
+        </mat-card-content>
+
+        <mat-card-actions *ngIf="appService.isUserLoggedIn()">
+            <button mat-raised-button color="accent" (click)="handleApplying()">Apply</button>
+            <button mat-raised-button color="primary" (click)="handleLike()">Like</button>
+
+        </mat-card-actions>
+      </mat-card>
+</div>

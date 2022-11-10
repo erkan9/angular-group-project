@@ -1,0 +1,16 @@
+.table{
+    width: 100%;
+}
+
+
+.jobLink:hover{
+    color: #ce9ee2d2;
+}
+.jobLink{
+    color: #fff;
+}
+
+.table-row:hover{
+    background-color: #7b1fa20e;
+    transition: 0.2s;
+}

@@ -1,0 +1,21 @@
+<div class="loginPage">
+    <div class="container">
+      <form action="" [formGroup]="formGroup" class="login-form" (ngSubmit)="onLogin()">
+        
+        Log in as User <mat-slide-toggle formControlName="isOrg" >Log in as Organization</mat-slide-toggle>
+
+        <mat-form-field class="full-width" appearance="fill" >
+          <mat-label [textContent]="formGroup.get('isOrg')?.value?'Email':'Username'"></mat-label>
+          <input matInput id="email" formControlName="username">
+        </mat-form-field>
+  
+        <mat-form-field class="full-width" appearance="fill" >
+          <mat-label>Password</mat-label>
+          <input type="password" matInput id="password" formControlName="password">
+        </mat-form-field>
+  
+  
+        <button mat-raised-button color="primary" class="full-width" type="submit" id="submit">Log In</button>
+      </form>
+    </div>
+  </div>
